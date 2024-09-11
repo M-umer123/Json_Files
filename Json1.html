@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+
+// Object
+
+        // var obj = {
+        //     "name": "John",
+        //     "age": 18,
+        //     "city": "New York",
+        // }
+
+        // Multiple Objects
+
+        // var obj = {
+
+        //     "Employees":
+        //     [   
+        //         {"Id":1889, "Salary": 4000, "Position": "Junior"}, 
+        //         {"Id":1946, "Salary": 8000, "Position": "Senior"},
+        //         {"Id":1462, "Salary": 3500, "Position": "NewComer"},
+
+        //     ]
+
+        // };
+
+        // document.write("Id:" + " &nbsp&nbsp&nbsp " + obj.Employees[0].Id + " &nbsp&nbsp&nbsp " + "Salary:" + " &nbsp&nbsp&nbsp " + obj.Employees[0].Salary + " &nbsp&nbsp&nbsp " + "Position:" + " " + obj.Employees[0].Position);
+
+        // Object inside an object
+     
+
+        var ali =  {
+            relatives:{
+                "father": "Ahmed",
+                "brother": "Saad",
+                
+            }
+        }
+
+        document.write(ali.relatives["father"])
+
+    </script>
+</body>
+</html>
