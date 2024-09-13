@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+
+<body>
+    <script>
+        const obj = {
+            "name": "John",
+            "age": 30,
+            "city": "New York",
+        };
+
+
+
+
+        // for (key in obj) {
+        //     document.write(obj[key] + "<br>");
+        // };
+
+
+        let arr = [8, "cricket", "football"];
+
+        // for (let index = 0; index < arr.length; index++) {
+        //     document.write( arr[index] + "<br>");
+
+        // };
+
+
+
+        // Json Stingify Method
+
+        const jsonObj1 = {
+            "name": "John",
+            "age": 30,
+            "city": "New York",
+        };
+
+        // document.write(JSON.stringify(jsonObj1));
+
+        // Json Parse Method
+
+        const jsonObj2 = '{"name": "John", "age": 30, "city": "New York" }';
+        const jsonParsed = JSON.parse(jsonObj2);
+
+        document.write(jsonParsed.age);
+    </script>
+</body>
+
+</html>
