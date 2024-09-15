@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        let product = `[
+
+            {
+        "id": 0385,
+        "title": Wall Clock ,
+        "price": 1300 ,
+        "image": https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9zdGF0aWMtMDEuZGFyYXoucGsvcC9mZDVkZjlmYTEyMzliMTNkOTBlM2ExOTA1NmJhZDA5ZC5qcGc=_400x400q75.png_.webp ,
+        "rating": 3.5
+
+            },
+
+            {
+        "id": 0386,
+        "title": Wall Clock ,
+        "price": 1500 ,
+        "image": https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9way1saXZlLTIxLnNsYXRpYy5uZXQva2YvUzQxN2Q4ZDJlNGY1MzQ1MTRhZWI4NTE3ZmNmY2M4ZTZmRi5qcGc=_400x400q75.png_.webp ,
+        "rating":4
+
+            },
+
+            {
+        "id": 0387,
+        "title": Digital Clock,
+        "price": 1200,
+        "image": https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9way1saXZlLTIxLnNsYXRpYy5uZXQva2YvUzVlZTI5NDEzMTVhYzQ3MTJiODBhYzg3NDk3ZDlmY2Y1TC5qcGc=_400x400q75.png_.webp,
+        "rating":3.3
+
+            },
+
+            {
+        "id": 0388,
+        "title": 3D Bird Style Wall Clock ,
+        "price": 4000,
+        "image": https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9zdGF0aWMtMDEuZGFyYXoucGsvcC9jNzlmYjQxZGIyN2NjYTA5OWExMmFiN2M1NDM5MzdkOC5qcGc=_400x400q75.png_.webp,
+        "rating": 3
+
+            },
+
+            {
+        "id": 0389,
+        "title": Plain Wall Clock ,
+        "price": 1200,
+        "image": https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9zdGF0aWMtMDEuZGFyYXoucGsvcC81OTI5ZjJiYTc2ZDRlZGRmNGRiMzA0MzFhMzQ1YjNkOS5qcGc=_400x400q75.png_.webp,
+        "rating": 3.5
+
+            },
+
+            {
+        "id": 0390,
+        "title": Stylish Wall Clock ,
+        "price": 1500,
+        "image":https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9zdGF0aWMtMDEuZGFyYXoucGsvcC9hNGM1YTJjY2U3MzRmNmIzZWExYWEzYzZhM2IzMjQxZi5qcGc=_400x400q75.png_.webp ,
+        "rating": 4
+
+            },
+
+            {
+        "id": 0391,
+        "title": LED Digital Alarm Clock,
+        "price": 6000,
+        "image" : https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9way1saXZlLTIxLnNsYXRpYy5uZXQva2YvUzM1ZDYyMDhiMzA3ODQ4ZmY5YWQ5OTU5ZjE1YjFlMDMxay5qcGc=_400x400q75.png_.webp,
+        "rating": 4.5
+
+            },
+
+            {
+        "id": 0392,
+        "title": World Map Wall Clock ,
+        "price": 4000,
+        "image":https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9zdGF0aWMtMDEuZGFyYXoucGsvcC85MDgxOTM0YWE2ZGVjMzUxOTM1NjRhZDc5NDc4MGMzYS5qcGc=_400x400q75.png_.webp ,
+        "rating": 3.3
+
+            },
+        
+            {
+        "id": 0393,
+        "title": Bird Style Wall Clock,
+        "price": 4000,
+        "image":https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9way1saXZlLTIxLnNsYXRpYy5uZXQva2YvU2JkYWE1NjM5ZTg5YTRmZDg4NmQ0NDgyODM2OWRlYzdkcy5qcGc=_400x400q75.png_.webp ,
+        "rating": 5
+
+            },
+        
+            {
+        "id": 0394,
+        "title":Flower Style Wall Clock ,
+        "price": 2500,
+        "image":https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9zdGF0aWMtMDEuZGFyYXoucGsvcC85N2VmNjVjMmY0NDFkMjExOTRjYzkxZWQxNmMwOTllOS5qcGc=_400x400q75.png_.webp ,
+        "rating":4.4
+
+            },
+        
+            {
+        "id": 0395,
+        "title": Alarm Clocks,
+        "price": 1200,
+        "image": https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9way1saXZlLTIxLnNsYXRpYy5uZXQva2YvU2M1MmQzZWIwNTgxNTRjYzdhNDgyYzExMGQxZWU5ZjU0aC5qcGc=_400x400q75.png_.webp,
+        "rating":5
+
+            },
+        
+            {
+        "id": 0396,
+        "title": Simple Wall Clock,
+        "price": 1300,
+        "image": https://img.lazcdn.com/3rd/q/aHR0cHM6Ly9way1saXZlLTIxLnNsYXRpYy5uZXQva2YvU2M1MmQzZWIwNTgxNTRjYzdhNDgyYzExMGQxZWU5ZjU0aC5qcGc=_400x400q75.png_.webp,
+        "rating": 3.2
+
+            }
+        
+        ]`
+    </script>
+</body>
+
+</html>
